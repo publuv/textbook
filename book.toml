@@ -1,0 +1,9 @@
+[book]
+title = "Example book"
+author = "John Doe"
+# authors = ["My Name"]
+description = "The example book covers examples."
+
+src = "src"
+language = "en"
+multilingual = false
