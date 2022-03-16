@@ -17,7 +17,7 @@ jobs:
       # Auto generate the SUMMARY.md
       - name:
         run: |
-          if [ ! -f $dir'SUMMARY.md' ]; then
+          if [ ! -f $GITHUB_WORKSPACE/src/SUMMARY.md ]; then
             printf "No SUMMARY.md found in src, generating...\n"
             ls $GITHUB_WORKSPACE
             sh -c "$GITHUB_WORKSPACE/toc.sh > $GITHUB_WORKSPACE/src/SUMMARY.md"
